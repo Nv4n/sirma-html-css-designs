@@ -75,7 +75,7 @@ button {
 	--col-white: #ffffff;
 	--col-black: #000000;
 
-	--hero-bg-col: rgb(244, 246, 245);
+	--hero-bg-col: #f4f6f5;
 
 	--col-footer-accent: rgb(142, 142, 142);
 }
@@ -85,9 +85,14 @@ body {
 	color: var(--col-black);
 }
 
+main > * {
+	margin-bottom: 11.875rem;
+}
+
 /* HEADER */
-header {
+.header-wrapper {
 	padding: 2.875rem 6.25rem;
+	padding-bottom: 0;
 	margin-bottom: 4rem;
 }
 
