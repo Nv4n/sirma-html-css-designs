@@ -307,6 +307,26 @@ header {
 	color: var(--col-white);
 }
 
+/* SOCIALS */
+.socials-container {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.socials-container > * {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0.25rem;
+	border-radius: 7px;
+	text-align: center;
+	cursor: pointer;
+	color: var(--col-black);
+	background-color: var(--col-primary-200);
+}
+
+.socials-container > *:hover {
+	background-color: var(--col-primary-400);
+}
 
 /* UTLITY */
 
