@@ -263,7 +263,6 @@ main > * {
 .card-list-carousel {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 5.625rem;
 }
 
 .card {
@@ -377,6 +376,13 @@ main > * {
 
 .uppercase {
 	text-transform: uppercase;
+}
+
+.gap-48 {
+	gap: 3rem;
+}
+.gap-90 {
+	gap: 5.625rem;
 }
 
 /* MEDIA */
