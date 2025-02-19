@@ -223,56 +223,79 @@ header {
 	gap: 7.5rem;
 	padding: 3.75rem 10.75rem 3.375rem;
 	background-color: var(--col-primary-200);
-	/* TODO FIX MARGIN BOTTOM */
-	margin-bottom: 1rem;
+	margin-bottom: 4.375rem;
 }
 
 .sponsor-container > * {
 	mix-blend-mode: multiply;
 }
 
-/* PRODUCTS */
+/* CARD */
 
-.product-list-container {
-	/* TODO FIX PADDING */
-	padding: 0 6.25rem;
-}
-.product-list-headline {
-	font-weight: bold;
-	position: relative;
-}
-
-.product-list-headline > :is(img, svg) {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-}
-
-.product-list-carousel {
-	display: flex;
-	gap: 10rem;
-}
-
-.product-card {
+.card-list-container {
 	display: flex;
 	flex-direction: column;
-	gap: 1rem;
-	/* TODO FIX GAP */
+	gap: 6.25rem;
+	padding: 0 6.25rem;
+}
+.card-list-headline {
+	font-weight: 900;
+	font-size: 3rem;
 }
 
-.product-card-img {
-	border-radius: 7px;
-}
-
-.product-card-name {
-	font-weight: 500;
-}
-.product-card-btn {
+.card-list-headline-highlight {
+	position: relative;
 	width: fit-content;
 }
 
-.product-card-btn:hover {
-	animation: bounce 1s ease-in infinite alternate;
+.card-list-headline-highlight > :is(img, svg) {
+	position: absolute;
+	bottom: 0;
+	right: -7px;
+	z-index: -1;
+}
+
+.card-list-carousel {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 5.625rem;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 1.75rem;
+	height: auto;
+}
+
+.card-img {
+	border-radius: 20px;
+}
+
+.card-info-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 500;
+}
+
+.card-name {
+	font-weight: 500;
+	font-size: 2rem;
+}
+
+.card-info {
+	color: var(--col-accent);
+	font-size: 1.5rem;
+}
+
+.card-btn {
+	font-size: 1.5rem;
+	color: var(--col-accent);
+}
+
+.card-btn:hover {
+	animation: bounce 500ms ease-in infinite alternate;
 }
 
 @keyframes bounce {
@@ -381,5 +404,12 @@ header {
 	}
 	.footer-list {
 		width: unset;
+	}
+	.card-list-carousel {
+		gap: 1rem;
+	}
+	.card-img {
+		height: 60%;
+		object-fit: cover;
 	}
 }
