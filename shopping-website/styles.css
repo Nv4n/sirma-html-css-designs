@@ -311,6 +311,14 @@ header {
 /* UTLITY */
 
 .btn--black {
+	background-color: var(--col-black);
+	color: var(--col-white);
+}
+
+.btn--black:hover {
+	color: var(--col-primary-200);
+}
+
 .uppercase {
 	text-transform: uppercase;
 }
