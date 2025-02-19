@@ -112,3 +112,11 @@ p {
 		line-height: 1.5rem;
 	}
 }
+
+/* COLORS */
+
+:root {
+	--col-green: #b9ff66;
+	--col-black: #191a23;
+	--col-white: #f3f3f3;
+}
