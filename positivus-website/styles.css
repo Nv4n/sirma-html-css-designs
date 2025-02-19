@@ -64,3 +64,51 @@ a,
 button {
 	cursor: pointer;
 }
+
+/* TYPOGRAPHY */
+
+body {
+	font-family: "Space Grotesk";
+}
+h1,
+h2,
+h3,
+h4 {
+	font-weight: 500;
+}
+h1 {
+	font-size: 3.75rem;
+}
+h2 {
+	font-size: 2.5rem;
+}
+h3 {
+	font-size: 1.875rem;
+}
+h4 {
+	font-size: 1.25rem;
+}
+p {
+	font-size: 1.125rem;
+	font-weight: 400;
+}
+
+@media screen and (width <600px) {
+	h1 {
+		font-size: 43px;
+	}
+	h2 {
+		font-size: 2.25rem;
+	}
+	h3 {
+		font-size: 1.625rem;
+	}
+	h4 {
+		font-size: 1.125rem;
+	}
+	p {
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1.5rem;
+	}
+}
