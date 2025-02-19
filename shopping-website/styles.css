@@ -103,7 +103,6 @@ header {
 	align-items: baseline;
 }
 .logo-text {
-	text-transform: uppercase;
 	font-size: 2.5rem;
 }
 .logo-img {
@@ -119,7 +118,6 @@ header {
 }
 
 .nav-container:nth-child(n) {
-	text-transform: uppercase;
 	font-size: 1.5rem;
 }
 
@@ -171,7 +169,6 @@ header {
 .hero-headline {
 	display: flex;
 	flex-direction: column;
-	text-transform: uppercase;
 	font-weight: 900;
 	font-size: 6rem;
 }
@@ -242,7 +239,6 @@ header {
 .product-list-headline {
 	font-weight: bold;
 	position: relative;
-	text-transform: uppercase;
 }
 
 .product-list-headline > :is(img, svg) {
@@ -311,6 +307,14 @@ header {
 	color: var(--col-white);
 }
 
+
+/* UTLITY */
+
+.btn--black {
+.uppercase {
+	text-transform: uppercase;
+}
+
 /* MEDIA */
 
 @media screen and (width<1200px) {
@@ -333,3 +337,10 @@ header {
 		gap: 3.25rem;
 	}
 }
+
+/* UTLITY */
+
+.uppercase {
+	text-transform: uppercase;
+}
+
