@@ -143,3 +143,29 @@ p {
 	color: white;
 	background-color: var(--col-black);
 }
+
+/* BUTTONS */
+/* TODO check real components */
+
+.btn-primary,
+.btn-secondary,
+.btn-ternary {
+	padding: 35px 20px;
+	border-radius: 14px;
+}
+
+.btn-primary {
+	color: white;
+	background-color: var(--col-black);
+}
+
+.btn-secondary {
+	color: black;
+	background-color: transparent;
+	border: 1px solid black;
+}
+
+.btn-ternary {
+	color: black;
+	background-color: var(--col-green);
+}
