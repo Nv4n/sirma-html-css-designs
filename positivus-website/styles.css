@@ -120,3 +120,26 @@ p {
 	--col-black: #191a23;
 	--col-white: #f3f3f3;
 }
+
+/* COMPONENTS */
+
+/* HEADINGS */
+.heading-black,
+.heading-green.heading-white {
+	padding: 0 7px;
+	border-radius: 7px;
+}
+
+.heading-green {
+	color: black;
+	background-color: var(--col-green);
+}
+
+.heading-white {
+	color: black;
+	background-color: white;
+}
+.heading-black {
+	color: white;
+	background-color: var(--col-black);
+}
