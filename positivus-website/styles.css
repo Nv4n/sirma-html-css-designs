@@ -117,8 +117,10 @@ p {
 
 :root {
 	--col-green: #b9ff66;
-	--col-black: #191a23;
-	--col-white: #f3f3f3;
+	--col-dark: #191a23;
+	--col-light: #f3f3f3;
+	--col-black: #000;
+	--col-white: #fff;
 }
 
 /* COMPONENTS */
@@ -131,17 +133,17 @@ p {
 }
 
 .heading-green {
-	color: black;
+	color: var(--col-black);
 	background-color: var(--col-green);
 }
 
 .heading-white {
-	color: black;
-	background-color: white;
+	color: var(--col-black);
+	background-color: var(--col-white);
 }
 .heading-black {
-	color: white;
-	background-color: var(--col-black);
+	color: var(--col-white);
+	background-color: var(--col-dark);
 }
 
 /* BUTTONS */
@@ -150,37 +152,43 @@ p {
 .btn-primary,
 .btn-secondary,
 .btn-ternary {
-	padding: 35px 20px;
+	padding: 35px 1.25rem;
 	border-radius: 14px;
 }
 
 .btn-primary {
-	color: white;
-	background-color: var(--col-black);
+	color: var(--col-white);
+	background-color: var(--col-dark);
 }
 
 .btn-secondary {
-	color: black;
+	color: var(--col-black);
 	background-color: transparent;
-	border: 1px solid black;
+	border: 1px solid var(--col-dark);
 }
 
-.btn-ternary {
-	color: black;
+.btn-tertiary {
+	color: var(--col-black);
 	background-color: var(--col-green);
 }
 
 /* LINKS */
 .link-icon {
-	transform: rotate(45deg);
+	transform: rotate(30deg);
 }
 
 .link-fill-icon {
-	--size: 5rem;
+	--size: 41px;
 	width: var(--size);
 	height: var(--size);
 	border-radius: 100%;
+	padding: 0.75rem 1rem;
 	background-color: currentColor;
+}
+
+.link {
+	display: flex;
+	gap: 1rem;
 }
 
 .link-fill-white,
@@ -198,6 +206,9 @@ p {
 .link-fill-black2 {
 	color: var(--col-black);
 }
+:is(.link-fill-black, .link-fill-black2) > .link-fill-icon {
+	background-color: var(--col-dark);
+}
 .link-fill-black > .link-fill-icon {
 	color: var(--col-green);
 }
@@ -206,10 +217,10 @@ p {
 }
 
 .link-fill-green {
-	color: black;
+	color: var(--col-black);
 }
 .link-fill-green2 {
-	color: white;
+	color: var(--col-white);
 }
 
 :is(.link-fill-green, .link-fill-green2) > .link-fill-icon {
@@ -231,16 +242,21 @@ p {
 /* PLUS ICON */
 
 .plus-icon {
-	--size: 5rem;
+	--size: 3.625rem;
 	width: var(--size);
 	height: var(--size);
+	padding: 1rem;
 	border-radius: 100%;
-	border: 1px solid var(--col-black);
-	color: var(--col-black);
-	background-color: var(--col-white);
+	border: 1px solid var(--col-dark);
+	color: var(--col-dark);
+	background-color: var(--col-light);
 }
 
 /* LOGO */
+.logo {
+	display: flex;
+	gap: 13px;
+}
 
 .logo-white {
 	color: var(--col-white);
