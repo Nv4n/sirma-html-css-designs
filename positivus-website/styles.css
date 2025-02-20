@@ -227,3 +227,15 @@ p {
 .link-black {
 	color: var(--col-black);
 }
+
+/* PLUS ICON */
+
+.plus-icon {
+	--size: 5rem;
+	width: var(--size);
+	height: var(--size);
+	border-radius: 100%;
+	border: 1px solid var(--col-black);
+	color: var(--col-black);
+	background-color: var(--col-white);
+}
