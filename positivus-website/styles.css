@@ -239,3 +239,13 @@ p {
 	color: var(--col-black);
 	background-color: var(--col-white);
 }
+
+/* LOGO */
+
+.logo-white {
+	color: var(--col-white);
+}
+
+.logo-black {
+	color: var(--col-black);
+}
