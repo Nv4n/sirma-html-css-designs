@@ -169,3 +169,61 @@ p {
 	color: black;
 	background-color: var(--col-green);
 }
+
+/* LINKS */
+.link-icon {
+	transform: rotate(45deg);
+}
+
+.link-fill-icon {
+	--size: 5rem;
+	width: var(--size);
+	height: var(--size);
+	border-radius: 100%;
+	background-color: currentColor;
+}
+
+.link-fill-white,
+.link-fill-white2 {
+	color: var(--col-white);
+}
+.link-fill-white > .link-fill-icon {
+	color: var(--col-green);
+}
+.link-fill-white2 > .link-fill-icon {
+	color: var(--col-black);
+}
+
+.link-fill-black,
+.link-fill-black2 {
+	color: var(--col-black);
+}
+.link-fill-black > .link-fill-icon {
+	color: var(--col-green);
+}
+.link-fill-black2 > .link-fill-icon {
+	color: var(--col-white);
+}
+
+.link-fill-green {
+	color: black;
+}
+.link-fill-green2 {
+	color: white;
+}
+
+:is(.link-fill-green, .link-fill-green2) > .link-fill-icon {
+	background-color: var(--col-green);
+	color: currentColor;
+}
+
+.link-green {
+	color: var(--col-green);
+}
+
+.link-white {
+	color: var(--col-white);
+}
+.link-black {
+	color: var(--col-black);
+}
