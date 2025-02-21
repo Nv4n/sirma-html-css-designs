@@ -60,6 +60,7 @@ a {
 	color: inherit;
 }
 
+li:has(a, button),
 a,
 button {
 	cursor: pointer;
@@ -123,6 +124,23 @@ p {
 	--col-white: #fff;
 }
 
+/* HEADER */
+
+.sponsors-container {
+	display: flex;
+	padding: 0 100px;
+	justify-content: space-between;
+	background-color: white;
+}
+
+.sponsors-container > * {
+	mix-blend-mode: luminosity;
+}
+
+.sponsors-container > *:hover {
+	mix-blend-mode: unset;
+}
+
 /* COMPONENTS */
 
 /* HEADINGS */
@@ -147,7 +165,6 @@ p {
 }
 
 /* BUTTONS */
-/* TODO check real components */
 
 .btn-primary,
 .btn-secondary,
@@ -256,6 +273,8 @@ p {
 .logo {
 	display: flex;
 	gap: 13px;
+	font-size: 29px;
+	font-weight: bold;
 }
 
 .logo-white {
