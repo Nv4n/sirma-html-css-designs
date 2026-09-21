@@ -70,6 +70,8 @@ button {
 
 body {
 	font-family: "Space Grotesk";
+	padding: 0 6.25rem;
+	padding-top: 3.75rem;
 }
 h1,
 h2,
@@ -94,7 +96,7 @@ p {
 	font-weight: 400;
 }
 
-@media screen and (width <600px) {
+@media screen and (width <900px) {
 	h1 {
 		font-size: 43px;
 	}
@@ -133,6 +135,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	gap: 4.375rem;
+	margin-bottom: 8.75rem;
 }
 
 /* NAV */
@@ -149,45 +152,19 @@ a {
 
 /* SPONSORS */
 .sponsors-container {
-	display: flex;
-	padding: 0 100px;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+	justify-items: center;
+	background: white;
 }
-.sponsors-container:has(.sponsors-group:hover) .sponsors-group {
-	animation-play-state: paused;
-}
-
-.sponsors-group {
-	display: flex;
-	justify-content: space-between;
-	gap: 10rem;
-	will-change: transform;
-	animation: scrolling 15s linear infinite;
-	background-color: white;
-	margin-right: 10rem;
-}
-.sponsors-group > * {
+.sponsors-container > * {
 	mix-blend-mode: luminosity;
 }
-
-.sponsors-group > *:hover {
+.sponsors-container > *:hover {
 	mix-blend-mode: unset;
 }
-@media screen and (width<900px) {
-	.sponsors-container :last-child {
-		display: none;
-	}
-	.sponsors-container {
-		animation: none;
-	}
-}
-@keyframes scrolling {
-	0% {
-		transform: translateX(0);
-	}
-	100% {
-		transform: translateX(-125%);
-	}
+@media screen and (width<1200px) {
+	/* .sponsors-container; */
 }
 
 /* COMPONENTS */
